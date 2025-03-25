@@ -1,122 +1,72 @@
-/* Reset */
-body, h1, h2, h3, p, ul, li, a, button, input, textarea {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* General */
+/* General Styles */
 body {
-    background: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px;
 }
 
-/* Navbar */
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    margin-left: 20px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background: url('https://source.unsplash.com/1600x900/?technology') center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+a:hover {
+  text-decoration: underline;
 }
 
-.hero span {
-    color: #ffcc00;
+/* Intro Section */
+#intro {
+  background-color: #222;
+  color: white;
+  padding: 50px;
+  text-align: center;
 }
 
-.hero .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #ffcc00;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
+#intro h1 {
+  font-size: 2.5em;
 }
 
-/* Sections */
+#intro p {
+  font-size: 1.2em;
+}
+
+/* Section Styles */
 section {
-    padding: 50px 20px;
-    text-align: center;
+  padding: 40px;
 }
 
-/* Projects */
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+#about, #projects, #contact {
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
 }
 
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    background: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.project h3 {
+  color: #333;
 }
