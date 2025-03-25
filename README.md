@@ -1,2 +1,2 @@
-# ChandanDeo
+# Chandan Deo
 Chandan Deo portfolio
